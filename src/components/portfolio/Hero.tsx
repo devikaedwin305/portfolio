@@ -26,7 +26,7 @@ export function Hero() {
         {...(reduce ? {} : { style: { y: photoY, scale: photoScale } })}
       >
         <img
-          src="/devika-portrait.jpeg"
+          src={`${import.meta.env.BASE_URL}devika-portrait.jpeg`}
           alt=""
           className="h-full w-full object-cover"
           fetchPriority="high"
