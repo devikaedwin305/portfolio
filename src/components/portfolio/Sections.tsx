@@ -302,7 +302,7 @@ export function Footer() {
           <p className="text-sm text-muted-foreground">HR Analytics · People · Data</p>
         </div>
         <ul className="flex flex-wrap gap-5 text-sm text-muted-foreground">
-          {nav.map((n) => <li key={n.id}><a href={`/#${n.id}`} className="link-underline hover:text-foreground">{n.label}</a></li>)}
+          {nav.map((n) => <li key={n.id}><a href={`${import.meta.env.BASE_URL}#${n.id}`} className="link-underline hover:text-foreground">{n.label}</a></li>)}
         </ul>
         <div className="flex gap-5 text-sm">
           <a href={profile.linkedin} target="_blank" rel="noopener noreferrer" className="link-underline text-primary">LinkedIn</a>
